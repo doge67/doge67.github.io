@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 450px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #777;
+  background: #f9e7cf;
+}
+
+img {
+  padding: 5px;
+  width: 35%;
+  height: 35%;
+  margin-left: 600px;
+  display: block;
+}
+.container{
+	overflow:hidden;
+}
+
+#main-header{
+	background-color:#f9e7cf;
+	color:black;
+}
+
+#navbar{
+	background-color:#7b4f2c;
+	color:#fff;
+	text-align: center;
+}
+
+#navbar ul{
+	padding:0;
+	list-style: none;
+}
+
+#navbar li{
+	display:inline;
+	text-align: center;
+
+}
+
+#navbar a{
+	color:#fff;
+	text-decoration: none;
+	font-size:18px;
+	padding-right:15px;
+}
+
+#showcase{
+	background-image:url('../images/cookiespic.jpg');
+	background-position:center right;
+	min-height:80px;
+	margin-bottom:30px;
+}
+
+#showcase h1{
+	color:#fff;
+	font-size:50px;
+	line-height: 1.6em;
+	padding-top:150px;
+	text-align: center;
+	margin-left: 320px; 
+	padding-bottom: 45px;
+}
+
+#main{
+	float:left;
+	width:70%;
+	padding:0 30px;
+	box-sizing: border-box;
+}
+
+#sidebar{
+	float:right;
+	width:30%;
+	background: #7b4f2c;
+	color:#fff;
+	padding:10px;
+	box-sizing: border-box;
+}
+
+#main-footer{
+	background: #7b4f2c;
+	color:#fff;
+	text-align: center;
+	padding:10px;
+	margin-top:56px;
+
+}

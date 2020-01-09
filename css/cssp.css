@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 450px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #777;
+  background: #f9e7cf;
+}
+
+ .container img{
+  padding: 5px;
+  width: 35%;
+  height: 35%;
+  margin-left: 600px;
+  display: block;
+}
+
+#navbar{
+  background-color:#7b4f2c;
+  color:#fff;
+  text-align: center;
+}
+
+#navbar ul{
+  padding:0;
+  list-style: none;
+}
+
+#navbar li{
+  display:inline;
+  text-align: center;
+
+}
+
+#navbar a{
+  color:#fff;
+  text-decoration: none;
+  font-size:18px;
+  padding-right:15px;
+}
+
+
+.heading {
+    text-align: center;
+    font-size: 5.0em;
+    letter-spacing: 1px;
+    padding: 40px;
+    color: #7b4f2c;
+}
+
+hr{
+  border-top:12px solid #7b4f2c;
+}
+
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
